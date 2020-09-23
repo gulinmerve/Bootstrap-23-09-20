@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient-two: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header {
+  /* background: #ff512f; */
+  /* fallback for old browsers */
+  background: var(--bggradient-two)
+  /* border: 1px solid black */
+}
+header a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+header .nav-item:last-child {
+  padding-right: 10em;
+}
+header .nav-item {
+  padding: 0.9em;
+}
+header .navbar-brand {
+  padding-left: 8rem;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+.nav-item .nav-link.active {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color:#EF3B53  !important;
+}
+
+header .row .col-md-7 {
+  padding: 5rem .2rem;
+  font-family: "Rubik", sans-serif;
+  /* border: 1px solid black */
+}
+header .container .col-md-7 h6 {
+  padding: .2rem;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+header .container .col-md-7 p {
+  padding: 0.2rem;;
+}
+
+header .row .col-md-5 {
+  padding: 0.2rem;;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+}
+
+.btn-custom {
+  border-radius: 30px;
+  font-weight: bold;
+}
+.btn-modal {
+  border-radius: 30px;
+  font-weight: bold;
+  background: var( --bggradient-two);
+  transition: 0.8s all;
+}
+.btn-modal:hover {
+  box-shadow: inset 14em 0 0 0 #ffffff;
+  color: #458ff6;
+}
+#ModalLoginForm input {
+  border-radius: 10px;
+}
+
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 4rem;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  /* border-radius: 0.2rem; */
+}
+
+.section-1 .row .col-md-6 .panel {
+  border-radius: 3px;
+  padding: 7rem 3rem;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4rem 0;
+  font-size: 2rem;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9rem;
+}
+
+/*  Section 2  */
+
+.cover {
+  width: 100%;
+  height: 30rem;
+  background: url("./img/pexels-photo-452738.jpeg");
+  background-position:center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 6rem;
+}
+
+.cover .content > h1 {
+  font-family: var(--Patua);
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+.cover .content > p {
+  font-family: var(--Rubik);
+  font-size: 1rem;
+  color: #e5e5e5;
+}
+.numbers {
+  margin-top: -6rem;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .rect > p {
+  font-family: var(--Patua);
+}
+
+.purchase > h1 {
+  padding-top: 6rem;
+  padding-bottom: 0.1rem;
+  font-family: var(--Lobster);
+}
+
+.purchase > p {
+  color: var(--light-black);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.purchase .cards .card {
+  width: 22rem;
+  margin: 1rem;
+}
+
+
+
+.cards .title {
+  background: rgba(208, 241, 241, 0.199);
+  padding: 1.5rem 2.5rem;
+  font-size: 4rem;
+
+}
+
+.card .card-text {
+  padding: 3rem;
+  color: var(--light-black);
+}
+
+.card-body .pricing {
+  background: rgba(208, 241, 241, 0.199);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+/* .cards div {
+  padding: 0;
+  margin: 0;
+} */
+
+.card-body .pricing > h1 {
+  font-size: 4rem;
+  padding: 1em 0.5em;
+}
+
+/* Section 3 */
+
+.section-3 {
+  height: auto;
+  margin-top: 5rem;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12 > h1 {
+  padding: 2rem;
+  color: whitesmoke;
+  font-size: 4rem;
+}
+
+.section-3 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 1.5rem;
+}
+
+.section-3 .app {
+  background: white;
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+}
+
+.section-3 .app h3 {
+  font-size:2rem;
+}
+
+.section-3 .app p {
+  font-size: 1rem;
+}
+
+/* Section 4 */
+
+.section-4 .container h1 {
+  font-size: 4rem;
+  padding-top: 4rem;
+}
+
+.section-4 .team {
+  padding: 4rem 2rem;
+}
+
+.section-4 .card {
+  width: 22rem;
+  margin-top: 3rem;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+/* footer */
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5rem ;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+  padding: .3rem
+}
+
+/* It is Adjacent sibling combinator */
